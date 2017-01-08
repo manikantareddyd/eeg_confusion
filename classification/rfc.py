@@ -6,5 +6,5 @@ from sklearn.ensemble import RandomForestClassifier
 from data import *
 
 rfc = RandomForestClassifier(n_estimators=100)
-rfc.fit(only_eeg.X_train, only_eeg.y_train)
-print(rfc.score(only_eeg.X_test, only_eeg.y_test))
+rfc.fit(only_subject.X_train, only_subject.y_train)
+print(rfc.score(only_subject.X_test, only_subject.y_test))
